@@ -1,0 +1,30 @@
+# Node.js зависимости
+node_modules/
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Конфигурации окружения
+.env
+.env.*
+
+# Покрытие тестов
+coverage/
+
+# Результаты Allure (если вдруг будешь использовать)
+allure-results/
+allure-report/
+
+# Настройки IDE
+.vscode/
+.idea/
+
+# ОС
+.DS_Store
+Thumbs.db
+
+# Кэш
+.cache/

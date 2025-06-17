@@ -1,0 +1,40 @@
+{
+  "name": "api-testing",
+  "version": "1.0.0",
+  "description": "API testing homework for DemoQA and mock API endpoints",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:demoqa": "jest demoqa_api_tests.test.js",
+    "test:mock": "jest mock_api_tests.test.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/?(*.)+(spec|test).js"
+    ]
+  },
+  "keywords": [
+    "api",
+    "testing",
+    "jest",
+    "axios",
+    "demoqa"
+  ],
+  "author": "Student",
+  "license": "MIT"
+}
